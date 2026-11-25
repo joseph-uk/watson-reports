@@ -30,11 +30,8 @@ env:
   RETENTION_DAYS: 7
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -71,5 +68,13 @@ jobs:
         with:
           path: docs
 
+  deploy:
+    # A separate job: deploy-pages cannot always see an artifact uploaded in its own job.
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - id: deployment
         uses: actions/deploy-pages@v4
