@@ -2,70 +2,178 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#0b6b4d"><meta name="color-scheme" content="light dark">
 <meta name="robots" content="noindex,nofollow">
-<title>Berlin City-Break Cheat Sheet — 27–29 Nov 2026</title><style>
-:root{color-scheme:light dark;--bg:#faf8f4;--ink:#1d1d1f;--mut:#5f5f66;--card:#fff;--line:#e4dfd5;--acc:#0b6b4d;--accbg:#eef5f1;--red:#b3261e;--amber:#8a5a00;--blue:#1a56a6;--onacc:#fff;--navh:52px}
-@media (prefers-color-scheme:dark){:root{--bg:#121413;--ink:#ececec;--mut:#a4a8a6;--card:#1c1f1e;--line:#33383a;--acc:#3fb88a;--accbg:#1c2a25;--red:#ff8a80;--amber:#ffc266;--blue:#8ab4f8;--onacc:#06251b}}
+<title>Berlin City-Break Cheat Sheet — 27–29 Nov 2026</title><style>/* Watson city-break report. Rules: CLAUDE/Design/report-design-brief.txt.
+   Containers use a full 1px border or a tint, never a one-sided stripe, and elevation is a border or a shadow, never both. */
+:root{
+  color-scheme:light dark;
+  --bg:#f7f5f0;--card:#fff;--float:#fff;--tint:#efece4;--line:#ddd8cc;
+  --ink:#1c1b19;--mut:#5c5a55;
+  --acc:#0b6b4d;--accbg:#e4efe9;--onacc:#fff;--head:#0b6b4d;--onhead:#fff;
+  --red:#a8231b;--amber:#7a4f00;--blue:#1a56a6;
+  --red-bg:rgba(179,38,30,.11);--amber-bg:rgba(214,150,0,.17);--blue-bg:rgba(26,86,166,.11);--grey-bg:var(--tint);
+  --tier-free:#11643a;--tier-free-bg:rgba(27,127,75,.14);
+  --tier-cheap:#3b6e05;--tier-cheap-bg:rgba(90,160,20,.17);
+  --tier-ok:#7a4f00;--tier-ok-bg:rgba(214,150,0,.18);
+  --tier-expensive:#a03c00;--tier-expensive-bg:rgba(230,110,0,.15);
+  --tier-very-expensive:#a8231b;--tier-very-expensive-bg:rgba(200,40,30,.13);
+  --shadow:0 4px 14px rgba(20,18,12,.2);
+  --fs-xs:.8125rem;--fs-sm:.9375rem;--fs-base:1rem;--fs-md:1.125rem;--fs-lg:1.375rem;--fs-xl:1.625rem;
+  --s1:.25rem;--s2:.5rem;--s3:.75rem;--s4:1rem;--s5:1.5rem;--s6:2rem;--s7:3rem;
+  --gut:1rem;--wrap:1100px;--navh:56px;--r:10px;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#111312;--card:#1a1d1c;--float:#262a29;--tint:#232726;--line:#2f3433;
+  --ink:#ebebe8;--mut:#a3a8a5;
+  --acc:#45be90;--accbg:#1a2c25;--onacc:#06251b;--head:#173229;--onhead:#ececec;
+  --red:#ff9d94;--amber:#ffc266;--blue:#8ab4f8;
+  --red-bg:rgba(255,120,110,.15);--amber-bg:rgba(255,194,102,.14);--blue-bg:rgba(138,180,248,.14);
+  --tier-free:#5fd49a;--tier-free-bg:rgba(95,212,154,.14);
+  --tier-cheap:#9ad65a;--tier-cheap-bg:rgba(154,214,90,.14);
+  --tier-ok:#ffc266;--tier-ok-bg:rgba(255,194,102,.14);
+  --tier-expensive:#ffa563;--tier-expensive-bg:rgba(255,165,99,.14);
+  --tier-very-expensive:#ff9d94;--tier-very-expensive-bg:rgba(255,120,110,.15);
+  --shadow:0 4px 16px rgba(0,0,0,.5);
+}}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:calc(var(--navh) + 8px);-webkit-text-size-adjust:100%}
-body{margin:0;font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);overflow-wrap:anywhere;padding:0 env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
-a{color:var(--blue)}
-header{background:#0b6b4d;color:#fff;padding:1rem}header h1{margin:0;font-size:1.35rem;line-height:1.25}header p{margin:.3rem 0 0;opacity:.92;font-size:.92rem}
-nav{position:sticky;top:0;z-index:20;height:var(--navh);background:var(--card);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:.25rem;overflow-x:auto;padding:0 .5rem;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
-nav a{flex:none;scroll-snap-align:start;display:flex;align-items:center;min-height:44px;padding:0 .85rem;border-radius:999px;text-decoration:none;color:var(--ink);font-weight:600;font-size:.92rem}
-nav a:active,nav a:hover{background:var(--accbg)}nav a.day{background:var(--accbg);color:var(--acc)}
-main{max-width:1100px;margin:0 auto;padding:0 .8rem 4.5rem}section{margin-top:1.6rem}
-h2{font-size:1.3rem;border-bottom:2px solid var(--acc);padding-bottom:.25rem;margin:0 0 .6rem}
-.wxrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:.6rem}.wx{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.7rem;font-size:.92rem}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,310px),1fr));gap:.7rem}
-.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.85rem;margin:.6rem 0}.grid .card{margin:0}
-.card h4{margin:0 0 .2rem;font-size:1.05rem;line-height:1.3}.card p{margin:.45rem 0}.meta{color:var(--mut);font-size:.85rem}.when{font-weight:700;color:var(--acc);font-size:1.15rem}.when i{font-weight:400;font-style:normal;font-size:.82rem;color:var(--mut)}
-.note{color:var(--mut);font-size:.88rem}.vegan{color:var(--acc);font-size:.9rem;margin:.3rem 0}
-.b{display:inline-block;font-size:.76rem;border-radius:5px;padding:.1rem .45rem;margin:.15rem .15rem 0 0;background:var(--accbg);color:var(--ink)}
-.b.red{background:rgba(179,38,30,.13);color:var(--red)}.b.amber{background:rgba(214,150,0,.16);color:var(--amber)}.b.blue{background:rgba(26,86,166,.13);color:var(--blue)}.b.cold{background:rgba(10,90,107,.14);color:var(--blue)}
-.hours{margin:.45rem 0;font-size:.86rem}.h{display:inline-block;margin-right:.7rem}.h.closed{color:var(--red);font-weight:700}
-.links{margin-top:.55rem;display:flex;flex-wrap:wrap;gap:.4rem}
-.links a{display:inline-flex;align-items:center;min-height:44px;padding:0 .9rem;border-radius:10px;background:var(--accbg);color:var(--blue);font-weight:600;font-size:.93rem;text-decoration:none}
-.links a.btn{background:var(--acc);color:var(--onacc)}
-details.srcs{margin-top:.35rem;font-size:.8rem;color:var(--mut)}details.srcs summary{cursor:pointer;min-height:32px;display:flex;align-items:center}details.srcs a{margin-right:.8rem}
-details.more{margin-top:.6rem}details.more>summary{cursor:pointer;min-height:48px;display:flex;align-items:center;padding:0 .9rem;border:1px solid var(--line);border-radius:12px;background:var(--card);font-weight:700;color:var(--acc)}
-.day{margin:1.1rem 0}.dayhead{position:sticky;top:var(--navh);z-index:10;background:var(--accbg);color:var(--ink);border-left:5px solid var(--acc);padding:.5rem .7rem;margin:0 0 .6rem;font-size:1.02rem}
-.slot{display:flex;gap:.8rem;margin:.9rem 0;border-bottom:1px dashed var(--line);padding-bottom:.7rem}.slottime{flex:none;width:6.2rem;font-weight:700;color:var(--acc)}.slotbody{flex:1;min-width:0}.slotbody h3{margin:.1rem 0 .3rem;font-size:1.1rem}
-.options{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,290px),1fr));gap:.55rem}
-.mini{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:10px;padding:.6rem .7rem;font-size:.93rem}
-.mini .mname{font-weight:700;color:var(--ink)}.mini .t{font-weight:700;color:var(--acc);margin-right:.35rem}.mini .links{margin-top:.35rem}
-#practical ul{padding-left:1.1rem}#practical li{margin:.6rem 0}
-[hidden]{display:none!important}
-.em{font-size:1.15rem;margin-right:.1rem}.chips{margin:.3rem 0 .1rem}
-.price,.tag{display:inline-flex;align-items:center;gap:.25rem;border-radius:999px;padding:.12rem .6rem;font-size:.8rem;margin:.15rem .3rem .15rem 0}
-.price{font-weight:800}.tag{background:var(--accbg);color:var(--ink);font-weight:600}
-.tier-free{background:rgba(27,127,75,.18);color:#1b7f4b}.tier-cheap{background:rgba(90,160,20,.2);color:#3f7a08}
-.tier-ok{background:rgba(214,150,0,.2);color:var(--amber)}.tier-expensive{background:rgba(230,110,0,.2);color:#b34a00}
-.tier-very-expensive{background:rgba(200,40,30,.18);color:var(--red)}.tier-unknown{background:transparent;border:1px dashed var(--mut);color:var(--mut)}
-@media (prefers-color-scheme:dark){.tier-free{color:#5fd49a}.tier-cheap{color:#9ad65a}.tier-expensive{color:#ffa563}}
-.priceline{font-size:.9rem;margin:.3rem 0}.priceline.unknown{color:var(--mut);font-style:italic}
-.mtop{font-size:1rem}.mrow{display:flex;flex-wrap:wrap;align-items:center;gap:.1rem .45rem;margin:.2rem 0}.ico{font-size:1.05rem}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--navh) + var(--s2));-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;font:var(--fs-base)/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);overflow-wrap:anywhere;font-variant-numeric:tabular-nums;padding:0 env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+::selection{background:var(--accbg);color:var(--ink)}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+input,button{accent-color:var(--acc);caret-color:var(--acc)}
+a{color:var(--acc);text-underline-offset:.18em}
+
+header{background:var(--head);color:var(--onhead);padding:var(--s5) max(var(--gut),calc((100% - var(--wrap))/2 + var(--gut))) var(--s4)}
+header h1{margin:0;font-size:var(--fs-xl);line-height:1.2;letter-spacing:-.015em;text-wrap:balance}
+header p{margin:var(--s2) 0 0;font-size:var(--fs-sm);opacity:.88}
+
+nav{position:sticky;top:0;z-index:20;height:var(--navh);background:var(--card);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:var(--s1);overflow-x:auto;padding:0 max(var(--s2),calc((100% - var(--wrap))/2 + var(--s2)));scroll-snap-type:x proximity;scroll-padding:0 var(--s2);-webkit-overflow-scrolling:touch}
+nav a{flex:none;scroll-snap-align:start;display:flex;align-items:center;min-height:44px;margin:0;padding:0 var(--s3);border-radius:999px;text-decoration:none;color:var(--ink);font-weight:600;font-size:var(--fs-sm)}
+nav a:hover,nav a:active{background:var(--tint)}
+nav a.day{background:var(--accbg);color:var(--acc)}
+
+main{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut) 5rem}
+section{margin-top:var(--s7)}
+h2{margin:0 0 var(--s3);font-size:var(--fs-lg);line-height:1.25;letter-spacing:-.01em;text-wrap:balance}
+p{text-wrap:pretty}
+.note{color:var(--mut);font-size:var(--fs-sm);max-width:68ch}
+section>.note{margin:0 0 var(--s4)}
+
+.wxrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:var(--s3)}
+.wx{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:var(--s3) var(--s4);font-size:var(--fs-sm);line-height:1.6}
+.wx b{font-size:var(--fs-base)}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:var(--s3)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:var(--s4);margin:var(--s3) 0}
+.grid .card{margin:0}
+.card>*+*{margin-top:var(--s2)}
+.card>div:empty{display:none}
+.card p,.card ol{max-width:68ch}
+.card p{margin-bottom:0}
+.card ol{margin:var(--s2) 0 0;padding-left:1.25rem}
+#getting-here .card{max-width:46rem}
+.card h4{margin:0;font-size:var(--fs-md);line-height:1.3;font-weight:700}
+.card .when+h4{margin-top:var(--s1)}
+.when{font-weight:700;color:var(--ink);font-size:var(--fs-base)}
+.when i{font-weight:400;font-style:normal;font-size:var(--fs-xs);color:var(--mut)}
+.meta{color:var(--mut);font-size:var(--fs-xs)}
+.vegan{color:var(--acc);font-size:var(--fs-sm)}
 .nomatch{color:var(--mut);font-style:italic}
-.legend{margin:1rem 0;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.1rem .9rem}
-.legend summary{cursor:pointer;min-height:48px;display:flex;align-items:center;font-weight:700;color:var(--acc)}
-.legend table{width:100%;border-collapse:collapse;font-size:.88rem;margin:.3rem 0 .6rem}.legend td{padding:.35rem .2rem;border-top:1px solid var(--line);vertical-align:top}
-.legend p{margin:.4rem 0;font-size:.9rem}
-.fab{position:fixed;left:max(.8rem,env(safe-area-inset-left));bottom:max(.8rem,env(safe-area-inset-bottom));z-index:30;min-height:48px;padding:0 1.1rem;border-radius:999px;border:2px solid var(--acc);background:var(--card);color:var(--ink);font:inherit;font-weight:700;box-shadow:0 2px 8px rgba(0,0,0,.3);cursor:pointer}
+
+.b{display:inline-block;font-size:var(--fs-xs);line-height:1.4;font-weight:600;border-radius:6px;padding:var(--s1) var(--s2);margin:0 var(--s1) var(--s1) 0;background:var(--accbg);color:var(--ink)}
+.b.red{background:var(--red-bg);color:var(--red)}
+.b.amber{background:var(--amber-bg);color:var(--amber)}
+.b.blue,.b.cold{background:var(--blue-bg);color:var(--blue)}
+.b.grey{background:var(--grey-bg);color:var(--mut)}
+
+.hours{font-size:var(--fs-xs);color:var(--mut)}
+.h{display:inline-block;margin-right:var(--s3)}
+.h b{color:var(--ink)}
+.h.closed,.h.closed b{color:var(--red);font-weight:700}
+
+.links{margin-top:var(--s3);display:flex;flex-wrap:wrap;gap:var(--s2)}
+.links a{display:inline-flex;align-items:center;min-height:44px;padding:0 var(--s3);border-radius:var(--r);background:var(--tint);color:var(--ink);font-weight:600;font-size:var(--fs-sm);text-decoration:none}
+.links a:hover{background:var(--accbg)}
+.links a.btn{background:var(--acc);color:var(--onacc)}
+.links a.btn:hover{filter:brightness(1.08)}
+details.srcs{font-size:var(--fs-xs);color:var(--mut)}
+details.srcs summary{cursor:pointer;min-height:44px;display:flex;align-items:center}
+details.srcs a{display:inline-flex;align-items:center;min-height:44px;margin-right:var(--s4)}
+
+details.more{margin-top:var(--s3)}
+details.more>summary{cursor:pointer;min-height:48px;display:flex;align-items:center;padding:0 var(--s4);border:1px solid var(--line);border-radius:var(--r);background:var(--card);font-weight:600;font-size:var(--fs-sm)}
+details.more[open]>summary{margin-bottom:var(--s1)}
+
+div.day{margin:var(--s5) 0 0}
+section>div.day:first-of-type{margin-top:var(--s4)}
+.dayhead{position:sticky;top:var(--navh);z-index:10;margin:0 0 var(--s3);padding:var(--s2) var(--s3);background:var(--accbg);color:var(--ink);border-radius:var(--r);font-size:var(--fs-base);line-height:1.35;font-weight:700}
+div.day>p{max-width:68ch;margin:0 0 var(--s3)}
+#schedule div.day{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:var(--s3);align-items:start}
+#schedule div.day>.dayhead,#schedule div.day>.note,#schedule div.day>.nomatch{grid-column:1/-1;margin:0}
+#schedule div.day>.card{margin:0}
+.slot{display:flex;gap:var(--s4);padding:var(--s4) 0}
+.slot+.slot{border-top:1px solid var(--line)}
+.slottime{flex:none;width:6rem;padding-top:.1rem;font-weight:700;font-size:var(--fs-sm)}
+.slotbody{flex:1;min-width:0}
+.slotbody h3{margin:0;font-size:var(--fs-md);line-height:1.3}
+.slotbody>.note{margin:var(--s1) 0 0}
+.options{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,290px),1fr));gap:var(--s3);margin-top:var(--s3)}
+.mini{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:var(--s3) var(--s4);font-size:var(--fs-sm)}
+.mini>*+*{margin-top:var(--s2)}
+.mtop{font-size:var(--fs-base);line-height:1.4}
+.mini .mname{font-weight:700;color:var(--ink)}
+.mini .t{font-weight:700;margin-right:var(--s1)}
+.mini .h{margin:0;font-size:var(--fs-xs);color:var(--mut)}
+.mini .links{margin-top:var(--s3)}
+
+#practical ul{margin:0;padding-left:1.1rem;max-width:68ch}
+#practical li{margin:var(--s3) 0}
+[hidden]{display:none!important}
+
+.em,.ico{font-size:1em;line-height:1}
+.chips,.mrow{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s1) var(--s2)}
+.price,.tag{display:inline-flex;align-items:center;gap:var(--s1);border-radius:999px;padding:.125rem var(--s3);font-size:var(--fs-xs);line-height:1.5}
+.price{font-weight:700}
+.tag{background:var(--tint);color:var(--ink);font-weight:500}
+.tier-free{background:var(--tier-free-bg);color:var(--tier-free)}
+.tier-cheap{background:var(--tier-cheap-bg);color:var(--tier-cheap)}
+.tier-ok{background:var(--tier-ok-bg);color:var(--tier-ok)}
+.tier-expensive{background:var(--tier-expensive-bg);color:var(--tier-expensive)}
+.tier-very-expensive{background:var(--tier-very-expensive-bg);color:var(--tier-very-expensive)}
+.tier-unknown{background:transparent;border:1px dashed var(--mut);color:var(--mut)}
+.priceline{font-size:var(--fs-sm)}
+.priceline.unknown{color:var(--mut);font-style:italic}
+
+.legend{margin:var(--s5) 0 0;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:0 var(--s4)}
+.legend summary{cursor:pointer;min-height:48px;display:flex;align-items:center;font-weight:600;font-size:var(--fs-sm)}
+.legend table{width:100%;border-collapse:collapse;font-size:var(--fs-sm);margin:0 0 var(--s3)}
+.legend td{padding:var(--s2) var(--s2) var(--s2) 0;border-top:1px solid var(--line);vertical-align:top}
+.legend p{margin:var(--s2) 0;font-size:var(--fs-sm);max-width:68ch}
+
+.fab{position:fixed;left:max(var(--s3),env(safe-area-inset-left));bottom:max(var(--s3),env(safe-area-inset-bottom));z-index:30;min-height:48px;padding:0 var(--s5);border-radius:999px;border:0;background:var(--ink);color:var(--bg);font:inherit;font-weight:600;font-size:var(--fs-sm);box-shadow:var(--shadow);cursor:pointer}
 .fab.on{background:var(--acc);color:var(--onacc)}
-.sheet{position:fixed;left:0;right:0;bottom:0;z-index:50;max-height:80vh;display:flex;flex-direction:column;background:var(--card);border-top:1px solid var(--line);border-radius:18px 18px 0 0;box-shadow:0 -6px 24px rgba(0,0,0,.3);padding-bottom:env(safe-area-inset-bottom)}
-.sheet-head{display:flex;gap:.5rem;align-items:center;padding:.7rem .9rem;border-bottom:1px solid var(--line)}.sheet-head b{flex:1;font-size:1.05rem}
-.sheet-head button{min-height:44px;padding:0 1rem;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-weight:600;cursor:pointer}
+.totop{position:fixed;right:max(var(--s3),env(safe-area-inset-right));bottom:max(var(--s3),env(safe-area-inset-bottom));z-index:30;width:48px;height:48px;border-radius:50%;background:var(--float);color:var(--ink);display:flex;align-items:center;justify-content:center;font-size:1.25rem;text-decoration:none;box-shadow:var(--shadow)}
+
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:50;width:100%;max-width:640px;margin:0 auto;max-height:80vh;max-height:80dvh;display:flex;flex-direction:column;background:var(--float);border-radius:16px 16px 0 0;box-shadow:0 -8px 32px rgba(0,0,0,.28);padding-bottom:env(safe-area-inset-bottom)}
+.sheet-head{display:flex;gap:var(--s2);align-items:center;padding:var(--s3) var(--s4);border-bottom:1px solid var(--line)}
+.sheet-head b{flex:1;font-size:var(--fs-md)}
+.sheet-head button{min-height:44px;padding:0 var(--s4);border-radius:var(--r);border:1px solid var(--line);background:transparent;color:var(--ink);font:inherit;font-size:var(--fs-sm);font-weight:600;cursor:pointer}
 #filter-close{background:var(--acc);color:var(--onacc);border-color:var(--acc)}
-.sheet-body{overflow:auto;padding:.6rem .9rem;-webkit-overflow-scrolling:touch}
-.fgroup{border:0;padding:0;margin:0 0 .9rem}.fgroup legend{font-weight:700;font-size:.88rem;color:var(--mut);margin-bottom:.35rem;padding:0}
-.chiprow{display:flex;flex-wrap:wrap;gap:.4rem}
-.chip{min-height:40px;padding:0 .8rem;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:.9rem;cursor:pointer}
-.chip[aria-pressed=true]{background:var(--acc);color:var(--onacc);border-color:var(--acc)}.chip .n{opacity:.65;font-size:.78rem}
-#q{width:100%;min-height:44px;border:1px solid var(--line);border-radius:10px;padding:0 .8rem;background:var(--bg);color:var(--ink);font:inherit}
-.sheet-foot{padding:.55rem .9rem;color:var(--mut);font-size:.88rem;border-top:1px solid var(--line)}
-.totop{position:fixed;right:max(.8rem,env(safe-area-inset-right));bottom:max(.8rem,env(safe-area-inset-bottom));z-index:30;width:48px;height:48px;border-radius:50%;background:var(--acc);color:var(--onacc);display:flex;align-items:center;justify-content:center;font-size:1.4rem;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,.3)}
-footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);font-size:.85rem}
-@media (max-width:640px){.slot{flex-direction:column;gap:.1rem}.slottime{width:auto}}
-@media print{nav,.totop{display:none}.dayhead{position:static}.card,.mini{break-inside:avoid}details.srcs,details.more>*{display:block}}
+.sheet-body{overflow:auto;padding:var(--s4);-webkit-overflow-scrolling:touch}
+.fgroup{border:0;padding:0;margin:0 0 var(--s4)}
+.fgroup legend{font-weight:600;font-size:var(--fs-xs);color:var(--mut);margin-bottom:var(--s2);padding:0;text-transform:none}
+.chiprow{display:flex;flex-wrap:wrap;gap:var(--s2)}
+.chip{min-height:44px;padding:0 var(--s3);border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);font:inherit;font-size:var(--fs-sm);cursor:pointer}
+.chip[aria-pressed=true]{background:var(--acc);color:var(--onacc);border-color:var(--acc);font-weight:600}
+.chip .n{opacity:.7;font-size:var(--fs-xs)}
+#q{width:100%;min-height:44px;border:1px solid var(--line);border-radius:var(--r);padding:0 var(--s3);background:var(--card);color:var(--ink);font:inherit}
+.sheet-foot{padding:var(--s3) var(--s4);color:var(--mut);font-size:var(--fs-sm);border-top:1px solid var(--line)}
+
+footer{max-width:var(--wrap);margin:0 auto;padding:var(--s4) var(--gut) 5rem;color:var(--mut);font-size:var(--fs-xs)}
+@media (max-width:640px){.slot{flex-direction:column;gap:var(--s1)}.slottime{width:auto;padding-top:0}}
+@media (min-width:900px){.slottime{width:7rem}}
+@media print{nav,.totop,.fab,.sheet{display:none}.dayhead{position:static}.card,.mini{break-inside:avoid}details.srcs,details.more>*{display:block}}
+.dh-label{font-weight:700}.dh-title{font-weight:400}
 </style></head>
 <body><a id="top"></a><header><h1>Berlin City-Break Cheat Sheet — 27–29 Nov 2026</h1><p>Two vegan, teetotal adults · fun side of Berlin · options, not a fixed schedule · staying in Prenzlauer Berg</p></header>
 <nav><a href="#getting-here">Getting here</a><a class="day" href="#plan-fri">Fri</a><a class="day" href="#plan-sat">Sat</a><a class="day" href="#plan-sun">Sun</a><a href="#schedule">Timed events</a><a href="#sights">Museums &amp; sights</a><a href="#fun">Fun &amp; quirky</a><a href="#eat">Eat</a><a href="#seasonal">Seasonal</a><a href="#weather">Weather</a><a href="#practical">Practical</a></nav><main>
@@ -183,7 +291,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
       <br>Rain: 0% · Wind ≤13 km/h
       <br>☀ 07:51 – 15:57</div></div></section>
 <section id="itinerary"><h2>Itinerary — pick &amp; mix</h2>
-<p class="note">Every block is a menu of options, not a fixed booking. Times are suggestions.</p><div class="day" id="plan-fri"><h3 class="dayhead">Friday 27 Nov — Land, settle in, first taste of Berlin</h3>
+<p class="note">Every block is a menu of options, not a fixed booking. Times are suggestions.</p><div class="day" id="plan-fri"><h3 class="dayhead"><span class="dh-label">Friday 27 Nov</span><span class="dh-title"> — Land, settle in, first taste of Berlin</span></h3>
   <p>Sunset is at 15:58, so the first afternoon is about getting settled, a good late lunch near the flat, and being somewhere pretty at dusk. Dark evenings are for shows and dinner.</p><div class="slot"><div class="slottime">12:00–13:45</div>
   <div class="slotbody"><h3>Airport to the flat</h3>
   <p class="note">Allow 30–45 minutes after landing for passport control and bags. The S85 is the easiest: one train, no changes, then about an 11-minute walk. Taxi is about €60–75.</p>
@@ -360,7 +468,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   <div class="mtop"><span class="em" role="img" aria-label="Cinema">🎬</span> <a class="mname" href="#hackesche-hoefe-kino-la-bola-negra">La Bola Negra (Spain, 2026) - OmeU at Hackesche Höfe Kino</a> <span class="t">21:15–23:50</span> </div>
   <div class="mrow"><span class="price tier-cheap" title="Cheap">€ Cheap</span><span class="ico" title="Indoors">🏠</span></div>
   <div class="meta">Mitte · ~160 min</div><div class="links"><a class="btn" href="https://www.kinoheld.de/kino/berlin/hackesche-hoefe-kino" target="_blank" rel="noopener">Tickets</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Hackesche%20H%C3%B6fe%20Kino%2C%20Rosenthaler%20Stra%C3%9Fe%2040%2F41%2C%2010178%20Berlin" target="_blank" rel="noopener">Map</a> <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Hackesche%20H%C3%B6fe%20Kino%2C%20Rosenthaler%20Stra%C3%9Fe%2040%2F41%2C%2010178%20Berlin&amp;travelmode=transit" target="_blank" rel="noopener">Directions</a> <a href="https://www.hoefekino.de/filme/la-bola-negra-53021/" target="_blank" rel="noopener">Website</a></div></div></div></div></div><p class="nomatch" hidden>Nothing here matches your filters.</p></div>
-<div class="day" id="plan-sat"><h3 class="dayhead">Saturday 28 Nov — The big day: museums, a warm-up, a proper evening</h3>
+<div class="day" id="plan-sat"><h3 class="dayhead"><span class="dh-label">Saturday 28 Nov</span><span class="dh-title"> — The big day: museums, a warm-up, a proper evening</span></h3>
   <p>Sat is the best day for a full-on museum morning, then a spa or a quirky afternoon, and the biggest choice of evening shows. Forecast: cloud clearing, around -3°C to 0°C.</p><div class="slot"><div class="slottime">09:00–10:00</div>
   <div class="slotbody"><h3>Breakfast</h3>
   
@@ -603,7 +711,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   <div class="mtop"><span class="em" role="img" aria-label="Cinema">🎬</span> <a class="mname" href="#hackesche-hoefe-kino-la-bola-negra">La Bola Negra (Spain, 2026) - OmeU at Hackesche Höfe Kino</a> <span class="t">21:15–23:50</span> </div>
   <div class="mrow"><span class="price tier-cheap" title="Cheap">€ Cheap</span><span class="ico" title="Indoors">🏠</span></div>
   <div class="meta">Mitte · ~160 min</div><div class="links"><a class="btn" href="https://www.kinoheld.de/kino/berlin/hackesche-hoefe-kino" target="_blank" rel="noopener">Tickets</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Hackesche%20H%C3%B6fe%20Kino%2C%20Rosenthaler%20Stra%C3%9Fe%2040%2F41%2C%2010178%20Berlin" target="_blank" rel="noopener">Map</a> <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Hackesche%20H%C3%B6fe%20Kino%2C%20Rosenthaler%20Stra%C3%9Fe%2040%2F41%2C%2010178%20Berlin&amp;travelmode=transit" target="_blank" rel="noopener">Directions</a> <a href="https://www.hoefekino.de/filme/la-bola-negra-53021/" target="_blank" rel="noopener">Website</a></div></div></div></div></div><p class="nomatch" hidden>Nothing here matches your filters.</p></div>
-<div class="day" id="plan-sun"><h3 class="dayhead">Sunday 29 Nov (First Advent) — First Advent: slow morning, flea market, concerts</h3>
+<div class="day" id="plan-sun"><h3 class="dayhead"><span class="dh-label">Sunday 29 Nov (First Advent)</span><span class="dh-title"> — First Advent: slow morning, flea market, concerts</span></h3>
   <p>Clearest, coldest day (-4°C to -1°C). Sunday is quiet for shops but not for culture. Plan around your flight: leave the flat about 3 hours before it, and remember the S85/S9 airport trains are shut, so use the FEX or a taxi.</p><div class="slot"><div class="slottime">09:30–12:00</div>
   <div class="slotbody"><h3>Vegan brunch + Mauerpark</h3>
   <p class="note">The Mauerpark flea market (10:00–18:00) is a 15-minute walk from the flat: wrap up well.</p>
@@ -821,7 +929,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   <div class="when">16:00–18:07 <i>(Fri matinee (weekly pattern, official page))</i></div>
   <h4><span class="em" role="img" aria-label="Variety &amp; circus">🎪</span> Cirque du Soleil ALIZÉ: Eine Reise in das Unsichtbare</h4>
   <div class="chips"><span class="price tier-unknown" title="Price not found">❓ Price not found</span><span class="tag">🎪 Variety &amp; circus</span></div>
-  <div class="priceline unknown">💶 Price not found: check the official site before you go. Official Cirque pages show no price (buy-tickets page lists only the schedule). Earlier berlin.de EUR 25.90 is an unconfirmed upgrade variant.</div>
+  <div class="priceline unknown">💶 Official Cirque pages show no price (buy-tickets page lists only the schedule). Earlier berlin.de EUR 25.90 is an unconfirmed upgrade variant.</div>
   <div class="meta">Tiergarten (Potsdamer Platz) · ~150 min visit · U2 Schönhauser Allee direct to Potsdamer Platz, ~20-25 min</div>
   <p>Cirque du Soleil&#39;s first permanent European show: acrobatics blended with stage magic (&#39;Acromagic&#39;). Big, visual, wordless spectacle that works fine without German.</p>
   <div><span class="b amber">📅 Booking advisable</span> <span class="b blue">🏠 Indoors</span> <span class="b grey">💬 Wordless show - no German needed (text-free per press)</span></div>
@@ -846,7 +954,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   <div class="when">17:45–19:44 <i>(Japanese, OmeU (English subtitles), 119 min)</i></div>
   <h4><span class="em" role="img" aria-label="Cinema">🎬</span> Dreams (Akira Kurosawa, 1990) - Japan #3 season</h4>
   <div class="chips"><span class="price tier-unknown" title="Price not found">❓ Price not found</span><span class="tag">🎬 Cinema</span></div>
-  <div class="priceline unknown">💶 Price not found: check the official site before you go. Babylon ticket-online page lists no price for Dreams (27 Nov 17:45); only the separate Metropolis live event shows EUR 29.</div>
+  <div class="priceline unknown">💶 Babylon ticket-online page lists no price for Dreams (27 Nov 17:45); only the separate Metropolis live event shows EUR 29.</div>
   <div class="meta">Mitte · ~120 min visit · U2 Schönhauser Allee to Rosa-Luxemburg-Platz, ~8 min</div>
   <p>Kurosawa&#39;s anthology of eight surreal, painterly dreams: gorgeous, strange, easy early-evening arrival-day cinema just up the road.</p>
   <div><span class="b blue">🏠 Indoors</span> <span class="b grey">💬 Japanese original, listed [OmeU]; English subtitles per ticket-online page (film page fetch said German, so check at box office)</span></div>
@@ -871,7 +979,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   <div class="when">19:30–21:45 <i>(Premiere night; official page says remaining tickets available (running time 2 h 15 incl. interval per berlin.de))</i></div>
   <h4><span class="em" role="img" aria-label="Theatre &amp; dance">🎭</span> Der Nussknacker (Staatsballett Berlin, choreography Christian Spuck)</h4>
   <div class="chips"><span class="price tier-unknown" title="Price not found">❓ Price not found</span><span class="tag">🎭 Theatre &amp; dance</span></div>
-  <div class="priceline unknown">💶 Price not found: check the official site before you go. No Nussknacker price on official pages; Eventim in-house shop timed out. Shown fees: EUR 2 online service per ticket.</div>
+  <div class="priceline unknown">💶 No Nussknacker price on official pages; Eventim in-house shop timed out. Shown fees: EUR 2 online service per ticket.</div>
   <div class="meta">Charlottenburg · ~150 min visit · U2 to Bismarckstraße then U7 one stop to Deutsche Oper, ~35-40 min</div>
   <p>Premiere of a new Nutcracker from the Staatsballett with live Deutsche Oper orchestra. Dance needs no German, and the premiere night has real occasion.</p>
   <div><span class="b red">🎟️ Book ahead — essential</span> <span class="b blue">🏠 Indoors</span> <span class="b grey">💬 Ballet - no German needed</span></div>
@@ -946,7 +1054,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   <div class="when">20:00 <i>(Fri; doors 19:00)</i></div>
   <h4><span class="em" role="img" aria-label="Rock, metal &amp; indie">🎸</span> HEALTH (industrial metal / noise rock), Conflict DLC tour, support Vowws and Doodseskader</h4>
   <div class="chips"><span class="price tier-unknown" title="Price not found">❓ Price not found</span><span class="tag">🎸 Rock, metal &amp; indie</span><span class="tag">🎛️ Experimental</span></div>
-  <div class="priceline unknown">💶 Price not found: check the official site before you go. Metropol page shows no price, only a link to Eventim. The EUR 40.90 aggregator snippet is not confirmed.</div>
+  <div class="priceline unknown">💶 Metropol page shows no price, only a link to Eventim. The EUR 40.90 aggregator snippet is not confirmed.</div>
   <div class="meta">Schöneberg (Nollendorfplatz) · ~150 min visit · U2 direct Schönhauser Allee to Nollendorfplatz ~22 min</div>
   <p>Heavy, danceable industrial-metal/noise act in a grand old theatre-turned-venue; ticks metal and electronic boxes in one.</p>
   <div><span class="b amber">📅 Booking advisable</span> <span class="b blue">🏠 Indoors</span> <span class="b grey">💬 English; no German needed</span></div>
@@ -958,7 +1066,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   <div class="when">20:00 <i>(Fri; doors 19:00, Kuppelhalle)</i></div>
   <h4><span class="em" role="img" aria-label="Rock, metal &amp; indie">🎸</span> LIA LIA + Levi (debut album Armor release, punk/grunge/indie)</h4>
   <div class="chips"><span class="price tier-unknown" title="Price not found">❓ Price not found</span><span class="tag">🎸 Rock, metal &amp; indie</span></div>
-  <div class="priceline unknown">💶 Price not found: check the official site before you go. Eventbrite and silent green pages show no price in fetched content.</div>
+  <div class="priceline unknown">💶 Eventbrite and silent green pages show no price in fetched content.</div>
   <div class="meta">Wedding · ~120 min visit · Ring S41/S42 Schönhauser Allee to Wedding ~8 min, ~12 min walk (~25 min)</div>
   <p>Indie/punk-flavoured &#39;babypunk&#39; in the striking domed ex-crematorium hall at silent green, one of Berlin&#39;s coolest venues.</p>
   <div><span class="b amber">📅 Booking advisable</span> <span class="b blue">🏠 Indoors</span> <span class="b grey">💬 Vocals language not stated (Chinese-German artist, indie/punk); no German needed for music</span></div>
@@ -996,7 +1104,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   <div class="when">20:00–22:07 <i>(Fri evening (weekly pattern, official page))</i></div>
   <h4><span class="em" role="img" aria-label="Variety &amp; circus">🎪</span> Cirque du Soleil ALIZÉ: Eine Reise in das Unsichtbare</h4>
   <div class="chips"><span class="price tier-unknown" title="Price not found">❓ Price not found</span><span class="tag">🎪 Variety &amp; circus</span></div>
-  <div class="priceline unknown">💶 Price not found: check the official site before you go. Official Cirque pages show no price (buy-tickets page lists only the schedule). Earlier berlin.de EUR 25.90 is an unconfirmed upgrade variant.</div>
+  <div class="priceline unknown">💶 Official Cirque pages show no price (buy-tickets page lists only the schedule). Earlier berlin.de EUR 25.90 is an unconfirmed upgrade variant.</div>
   <div class="meta">Tiergarten (Potsdamer Platz) · ~150 min visit · U2 Schönhauser Allee direct to Potsdamer Platz, ~20-25 min</div>
   <p>Cirque du Soleil&#39;s first permanent European show: acrobatics blended with stage magic (&#39;Acromagic&#39;). Big, visual, wordless spectacle that works fine without German.</p>
   <div><span class="b amber">📅 Booking advisable</span> <span class="b blue">🏠 Indoors</span> <span class="b grey">💬 Wordless show - no German needed (text-free per press)</span></div>
@@ -1081,7 +1189,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   <div class="when">11:00–18:00 <i>(Saturday)</i></div>
   <h4><span class="em" role="img" aria-label="Shops &amp; flea markets">🛍️</span> Holy Shit Shopping Berlin (Christmas design market)</h4>
   <div class="chips"><span class="price tier-unknown" title="Price not found">❓ Price not found</span><span class="tag">🛍️ Shops &amp; flea markets</span><span class="tag">🎄 Markets &amp; festive</span></div>
-  <div class="priceline unknown">💶 Price not found: check the official site before you go. visitBerlin lists admission as &#39;tbd&#39;; organiser page shows only a Tickets link to Universe, no price. Check before going.</div>
+  <div class="priceline unknown">💶 visitBerlin lists admission as &#39;tbd&#39;; organiser page shows only a Tickets link to Universe, no price. Check before going.</div>
   <div class="meta">Treptow / Alt-Treptow · ~75 min visit · Ringbahn S41/S42 to Treptower Park then bus, about 35-40 min</div>
   <p>Independent designers and makers, quirky handmade goods and a DIY crowd - creative, unmassed alternative to a standard Christmas market, indoors and by the Spree.</p>
   <div><span class="b blue">🏠 Indoors</span> <span class="b grey">💬 no German needed</span></div>
@@ -1129,7 +1237,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   <div class="when">15:45–17:40 <i>(Japanese, OmeU (English subtitles), 115 min)</i></div>
   <h4><span class="em" role="img" aria-label="Cinema">🎬</span> Typhoon Club (Shinji Sômai, 1985) - Japan #3 season</h4>
   <div class="chips"><span class="price tier-unknown" title="Price not found">❓ Price not found</span><span class="tag">🎬 Cinema</span></div>
-  <div class="priceline unknown">💶 Price not found: check the official site before you go. Babylon ticket-online page lists no price for Typhoon Club (28 Nov 15:45).</div>
+  <div class="priceline unknown">💶 Babylon ticket-online page lists no price for Typhoon Club (28 Nov 15:45).</div>
   <div class="meta">Mitte · ~120 min visit · U2 Schönhauser Allee to Rosa-Luxemburg-Platz, ~8 min</div>
   <p>A cult 1980s Japanese teen drama about a school trapped overnight by a typhoon: eerie, intense, a rarely shown restoration-circuit film for cinephiles.</p>
   <div><span class="b blue">🏠 Indoors</span> <span class="b grey">💬 Japanese, OmeU English subtitles</span></div>
@@ -1141,7 +1249,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   <div class="when">16:00–18:07 <i>(Sat 16:00 (official pattern; berlin.de order-online shown))</i></div>
   <h4><span class="em" role="img" aria-label="Variety &amp; circus">🎪</span> Cirque du Soleil ALIZÉ: Eine Reise in das Unsichtbare</h4>
   <div class="chips"><span class="price tier-unknown" title="Price not found">❓ Price not found</span><span class="tag">🎪 Variety &amp; circus</span></div>
-  <div class="priceline unknown">💶 Price not found: check the official site before you go. Official Cirque pages show no price (buy-tickets page lists only the schedule). Earlier berlin.de EUR 25.90 is an unconfirmed upgrade variant.</div>
+  <div class="priceline unknown">💶 Official Cirque pages show no price (buy-tickets page lists only the schedule). Earlier berlin.de EUR 25.90 is an unconfirmed upgrade variant.</div>
   <div class="meta">Tiergarten (Potsdamer Platz) · ~150 min visit · U2 Schönhauser Allee direct to Potsdamer Platz, ~20-25 min</div>
   <p>Cirque du Soleil&#39;s first permanent European show: acrobatics blended with stage magic (&#39;Acromagic&#39;). Big, visual, wordless spectacle that works fine without German.</p>
   <div><span class="b amber">📅 Booking advisable</span> <span class="b blue">🏠 Indoors</span> <span class="b grey">💬 Wordless show - no German needed (text-free per press)</span></div>
@@ -1217,7 +1325,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   <div class="when">19:00–23:45 <i>(Sat (listing window 19:00-23:45; duo set time within it unknown))</i></div>
   <h4><span class="em" role="img" aria-label="Experimental">🎛️</span> Sam Gendel &amp; Sam Wilkes Live (saxophone and bass duo, experimental jazz/ambient)</h4>
   <div class="chips"><span class="price tier-unknown" title="Price not found">❓ Price not found</span><span class="tag">🎛️ Experimental</span><span class="tag">🎷 Jazz &amp; blues</span></div>
-  <div class="priceline unknown">💶 Price not found: check the official site before you go. Ticket Tailor page shows date/time and a Buy tickets button only; no price visible.</div>
+  <div class="priceline unknown">💶 Ticket Tailor page shows date/time and a Buy tickets button only; no price visible.</div>
   <div class="meta">Oberschöneweide · ~180 min visit · Ring S41/S42 to Ostkreuz, then S3/S9 to Schöneweide plus walk, ~55 min</div>
   <p>Cult LA duo making hypnotic, jazz-meets-ambient instrumentals; the closest thing to a must-see experimental listening show this weekend.</p>
   <div><span class="b red">🎟️ Book ahead — essential</span> <span class="b blue">🏠 Indoors</span> <span class="b grey">💬 instrumental; no German needed</span> <span class="b amber">⚠️ Double-check before going</span></div>
@@ -1279,7 +1387,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   <div class="when">20:00–22:07 <i>(Sat evening (weekly pattern, official page))</i></div>
   <h4><span class="em" role="img" aria-label="Variety &amp; circus">🎪</span> Cirque du Soleil ALIZÉ: Eine Reise in das Unsichtbare</h4>
   <div class="chips"><span class="price tier-unknown" title="Price not found">❓ Price not found</span><span class="tag">🎪 Variety &amp; circus</span></div>
-  <div class="priceline unknown">💶 Price not found: check the official site before you go. Official Cirque pages show no price (buy-tickets page lists only the schedule). Earlier berlin.de EUR 25.90 is an unconfirmed upgrade variant.</div>
+  <div class="priceline unknown">💶 Official Cirque pages show no price (buy-tickets page lists only the schedule). Earlier berlin.de EUR 25.90 is an unconfirmed upgrade variant.</div>
   <div class="meta">Tiergarten (Potsdamer Platz) · ~150 min visit · U2 Schönhauser Allee direct to Potsdamer Platz, ~20-25 min</div>
   <p>Cirque du Soleil&#39;s first permanent European show: acrobatics blended with stage magic (&#39;Acromagic&#39;). Big, visual, wordless spectacle that works fine without German.</p>
   <div><span class="b amber">📅 Booking advisable</span> <span class="b blue">🏠 Indoors</span> <span class="b grey">💬 Wordless show - no German needed (text-free per press)</span></div>
@@ -1292,7 +1400,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   <div class="when">20:00 <i>(Main Stage)</i></div>
   <h4><span class="em" role="img" aria-label="Theatre &amp; dance">🎭</span> It&#39;s Gonna Rain (Opera Lab Berlin, music and dance theatre after Steve Reich)</h4>
   <div class="chips"><span class="price tier-unknown" title="Price not found">❓ Price not found</span><span class="tag">🎭 Theatre &amp; dance</span></div>
-  <div class="priceline unknown">💶 Price not found: check the official site before you go. ET Berlin page and Eventbrite page show no ticket price.</div>
+  <div class="priceline unknown">💶 ET Berlin page and Eventbrite page show no ticket price.</div>
   <div class="meta">Kreuzberg · ~70 min visit · ~40 min: U2 to Alexanderplatz area then U8 or U6 towards Kreuzberg (Platz der Luftbrücke / Mehringdamm area)</div>
   <p>Experimental music-and-dance theatre built on three Steve Reich works (It&#39;s Gonna Rain, Come Out, Piano Phase), at Berlin&#39;s English-language theatre. Fits the experimental and minimalist taste.</p>
   <div><span class="b amber">📅 Booking advisable</span> <span class="b blue">🏠 Indoors</span> <span class="b grey">💬 English (Eventbrite listing); music/dance theatre</span></div>
@@ -1353,7 +1461,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   <div class="when">22:00–23:43 <i>(Japanese, OmeU (English subtitles))</i></div>
   <h4><span class="em" role="img" aria-label="Cinema">🎬</span> Hana-bi (Fireworks, Takeshi Kitano, 1997) - Japan #3 season</h4>
   <div class="chips"><span class="price tier-unknown" title="Price not found">❓ Price not found</span><span class="tag">🎬 Cinema</span></div>
-  <div class="priceline unknown">💶 Price not found: check the official site before you go. Kinoheld page is JS-rendered with no prices; Babylon site and ticket page list no price for this Japan #3 screening.</div>
+  <div class="priceline unknown">💶 Kinoheld page is JS-rendered with no prices; Babylon site and ticket page list no price for this Japan #3 screening.</div>
   <div class="meta">Mitte · ~105 min visit · U2 Schönhauser Allee to Rosa-Luxemburg-Platz, ~8 min</div>
   <p>Kitano&#39;s Venice Golden Lion winner: a quiet, painterly arthouse crime drama with sudden violence. 103 min, Saturday late slot at a classic Mitte cinema.</p>
   <div><span class="b blue">🏠 Indoors</span> <span class="b grey">💬 Japanese, OmeU English subtitles</span></div>
@@ -1389,7 +1497,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   <div class="when">11:00–18:00 <i>(Sunday)</i></div>
   <h4><span class="em" role="img" aria-label="Shops &amp; flea markets">🛍️</span> Holy Shit Shopping Berlin (Christmas design market)</h4>
   <div class="chips"><span class="price tier-unknown" title="Price not found">❓ Price not found</span><span class="tag">🛍️ Shops &amp; flea markets</span><span class="tag">🎄 Markets &amp; festive</span></div>
-  <div class="priceline unknown">💶 Price not found: check the official site before you go. visitBerlin lists admission as &#39;tbd&#39;; organiser page shows only a Tickets link to Universe, no price. Check before going.</div>
+  <div class="priceline unknown">💶 visitBerlin lists admission as &#39;tbd&#39;; organiser page shows only a Tickets link to Universe, no price. Check before going.</div>
   <div class="meta">Treptow / Alt-Treptow · ~75 min visit · Ringbahn S41/S42 to Treptower Park then bus, about 35-40 min</div>
   <p>Independent designers and makers, quirky handmade goods and a DIY crowd - creative, unmassed alternative to a standard Christmas market, indoors and by the Spree.</p>
   <div><span class="b blue">🏠 Indoors</span> <span class="b grey">💬 no German needed</span></div>
@@ -1425,7 +1533,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   <div class="when">13:00–15:07 <i>(Sun early show (weekly pattern, official page))</i></div>
   <h4><span class="em" role="img" aria-label="Variety &amp; circus">🎪</span> Cirque du Soleil ALIZÉ: Eine Reise in das Unsichtbare</h4>
   <div class="chips"><span class="price tier-unknown" title="Price not found">❓ Price not found</span><span class="tag">🎪 Variety &amp; circus</span></div>
-  <div class="priceline unknown">💶 Price not found: check the official site before you go. Official Cirque pages show no price (buy-tickets page lists only the schedule). Earlier berlin.de EUR 25.90 is an unconfirmed upgrade variant.</div>
+  <div class="priceline unknown">💶 Official Cirque pages show no price (buy-tickets page lists only the schedule). Earlier berlin.de EUR 25.90 is an unconfirmed upgrade variant.</div>
   <div class="meta">Tiergarten (Potsdamer Platz) · ~150 min visit · U2 Schönhauser Allee direct to Potsdamer Platz, ~20-25 min</div>
   <p>Cirque du Soleil&#39;s first permanent European show: acrobatics blended with stage magic (&#39;Acromagic&#39;). Big, visual, wordless spectacle that works fine without German.</p>
   <div><span class="b amber">📅 Booking advisable</span> <span class="b blue">🏠 Indoors</span> <span class="b grey">💬 Wordless show - no German needed (text-free per press)</span></div>
@@ -1450,7 +1558,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   <div class="when">15:00–17:06 <i>(Japanese, OmeU (English subtitles))</i></div>
   <h4><span class="em" role="img" aria-label="Cinema">🎬</span> Sansho the Bailiff (Mizoguchi, 1954) - Japan #3 season</h4>
   <div class="chips"><span class="price tier-unknown" title="Price not found">❓ Price not found</span><span class="tag">🎬 Cinema</span></div>
-  <div class="priceline unknown">💶 Price not found: check the official site before you go. Kinoheld page is JS-rendered with no prices; Babylon site and ticket page list no price for this Japan #3 screening.</div>
+  <div class="priceline unknown">💶 Kinoheld page is JS-rendered with no prices; Babylon site and ticket page list no price for this Japan #3 screening.</div>
   <div class="meta">Mitte · ~130 min visit · U2 Schönhauser Allee to Rosa-Luxemburg-Platz, ~8 min</div>
   <p>Mizoguchi&#39;s Venice Silver Lion-winning classic, one of cinema&#39;s great humanist dramas, on a Sunday afternoon.</p>
   <div><span class="b blue">🏠 Indoors</span> <span class="b grey">💬 Japanese, OmeU English subtitles</span></div>
@@ -1474,7 +1582,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   <div class="when">17:00–19:07 <i>(Sun late afternoon (weekly pattern, official page))</i></div>
   <h4><span class="em" role="img" aria-label="Variety &amp; circus">🎪</span> Cirque du Soleil ALIZÉ: Eine Reise in das Unsichtbare</h4>
   <div class="chips"><span class="price tier-unknown" title="Price not found">❓ Price not found</span><span class="tag">🎪 Variety &amp; circus</span></div>
-  <div class="priceline unknown">💶 Price not found: check the official site before you go. Official Cirque pages show no price (buy-tickets page lists only the schedule). Earlier berlin.de EUR 25.90 is an unconfirmed upgrade variant.</div>
+  <div class="priceline unknown">💶 Official Cirque pages show no price (buy-tickets page lists only the schedule). Earlier berlin.de EUR 25.90 is an unconfirmed upgrade variant.</div>
   <div class="meta">Tiergarten (Potsdamer Platz) · ~150 min visit · U2 Schönhauser Allee direct to Potsdamer Platz, ~20-25 min</div>
   <p>Cirque du Soleil&#39;s first permanent European show: acrobatics blended with stage magic (&#39;Acromagic&#39;). Big, visual, wordless spectacle that works fine without German.</p>
   <div><span class="b amber">📅 Booking advisable</span> <span class="b blue">🏠 Indoors</span> <span class="b grey">💬 Wordless show - no German needed (text-free per press)</span></div>
@@ -1512,7 +1620,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   <div class="when">18:00–19:30 <i>(New 4K restoration; live orchestra; English intertitles with German subtitles)</i></div>
   <h4><span class="em" role="img" aria-label="Cinema">🎬</span> Chaplin&#39;s The Gold Rush with live orchestra (Babylon Orchester Berlin)</h4>
   <div class="chips"><span class="price tier-unknown" title="Price not found">❓ Price not found</span><span class="tag">🎬 Cinema</span></div>
-  <div class="priceline unknown">💶 Price not found: check the official site before you go. Neither the official event page nor the kinoheld page shows a price. The EUR 29 seen is for Metropolis live, not this show; do not assume.</div>
+  <div class="priceline unknown">💶 Neither the official event page nor the kinoheld page shows a price. The EUR 29 seen is for Metropolis live, not this show; do not assume.</div>
   <div class="meta">Mitte · ~100 min visit · U2 Schönhauser Allee to Rosa-Luxemburg-Platz, ~8 min</div>
   <p>Chaplin&#39;s 1925 comedy (the boot-eating scene) scored live by an orchestra in Babylon&#39;s grand hall. Warm, funny and wordless, a good Sunday-evening treat.</p>
   <div><span class="b amber">📅 Booking advisable</span> <span class="b blue">🏠 Indoors</span> <span class="b grey">💬 OmU: English intertitles with German subtitles; wordless, no German needed</span></div>
@@ -1537,7 +1645,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   <div class="when">20:00–22:00 <i>(Sun, Grosser Saal; doors 19:00, talk 19:10 (German))</i></div>
   <h4><span class="em" role="img" aria-label="Classical &amp; choral">🎻</span> Rundfunk-Sinfonieorchester Berlin / Vladimir Jurowski with Maria Ioudenitch (violin): Abazari premiere, Bernstein Serenade, R. Strauss Also sprach Zarathustra</h4>
   <div class="chips"><span class="price tier-unknown" title="Price not found">❓ Price not found</span><span class="tag">🎻 Classical &amp; choral</span></div>
-  <div class="priceline unknown">💶 Price not found: check the official site before you go. No price on rsb-online.de or Konzerthaus pages; tickets sold via external RSB shop that could not be read.</div>
+  <div class="priceline unknown">💶 No price on rsb-online.de or Konzerthaus pages; tickets sold via external RSB shop that could not be read.</div>
   <div class="meta">Mitte (Gendarmenmarkt) · ~140 min visit · U2 Schönhauser Allee to Stadtmitte ~15 min, 3 min walk</div>
   <p>Blockbuster finale with Strauss&#39;s 2001 fanfare piece and a brand-new commission under Jurowski, a conductor who loves adventurous programmes. Good Sunday-night closer.</p>
   <div><span class="b amber">📅 Booking advisable</span> <span class="b blue">🏠 Indoors</span> <span class="b grey">💬 no German needed (instrumental)</span></div>
@@ -1561,7 +1669,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   <div class="when">20:00 <i>(Sun; doors 19:00)</i></div>
   <h4><span class="em" role="img" aria-label="Rock, metal &amp; indie">🎸</span> Kodaline + Bertie Newman (Farewell Tour)</h4>
   <div class="chips"><span class="price tier-unknown" title="Price not found">❓ Price not found</span><span class="tag">🎸 Rock, metal &amp; indie</span></div>
-  <div class="priceline unknown">💶 Price not found: check the official site before you go. Neither Huxleys nor berlin.de page shows a price; tickets go to Eventim (not read).</div>
+  <div class="priceline unknown">💶 Neither Huxleys nor berlin.de page shows a price; tickets go to Eventim (not read).</div>
   <div class="meta">Neukölln (Hasenheide) · ~150 min visit · Ring S41/S42 to Hermannstraße or Südkreuz area then bus/U8, or U2/U7 to Hermannplatz, ~35 min</div>
   <p>Irish anthemic indie-rock band on their farewell tour in a classic 1,500-cap hall; borderline mainstream but emotionally big live.</p>
   <div><span class="b amber">📅 Booking advisable</span> <span class="b blue">🏠 Indoors</span> <span class="b grey">💬 English; no German needed</span></div>
@@ -1573,7 +1681,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   <div class="when">20:00 <i>(Main Stage)</i></div>
   <h4><span class="em" role="img" aria-label="Theatre &amp; dance">🎭</span> It&#39;s Gonna Rain (Opera Lab Berlin, music and dance theatre after Steve Reich)</h4>
   <div class="chips"><span class="price tier-unknown" title="Price not found">❓ Price not found</span><span class="tag">🎭 Theatre &amp; dance</span></div>
-  <div class="priceline unknown">💶 Price not found: check the official site before you go. ET Berlin page and Eventbrite page show no ticket price.</div>
+  <div class="priceline unknown">💶 ET Berlin page and Eventbrite page show no ticket price.</div>
   <div class="meta">Kreuzberg · ~70 min visit · ~40 min: U2 to Alexanderplatz area then U8 or U6 towards Kreuzberg (Platz der Luftbrücke / Mehringdamm area)</div>
   <p>Experimental music-and-dance theatre built on three Steve Reich works (It&#39;s Gonna Rain, Come Out, Piano Phase), at Berlin&#39;s English-language theatre. Fits the experimental and minimalist taste.</p>
   <div><span class="b amber">📅 Booking advisable</span> <span class="b blue">🏠 Indoors</span> <span class="b grey">💬 English (Eventbrite listing); music/dance theatre</span></div>
@@ -1593,7 +1701,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   <p class="note">21:15 OmeU (English subs) shows Fri 27, Sat 28, Sun 29 confirmed. Other times (17:45, 21:00 etc) are OmU German subs. 155 min, from age 12. Address confirmed by indiekino listing. Ticket price not on page.</p>
   <div class="links"><a class="btn" href="https://www.kinoheld.de/kino/berlin/hackesche-hoefe-kino" target="_blank" rel="noopener">Tickets</a> <a href="https://www.hoefekino.de/filme/la-bola-negra-53021/" target="_blank" rel="noopener">Website</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Hackesche%20H%C3%B6fe%20Kino%2C%20Rosenthaler%20Stra%C3%9Fe%2040%2F41%2C%2010178%20Berlin" target="_blank" rel="noopener">Map</a> <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Hackesche%20H%C3%B6fe%20Kino%2C%20Rosenthaler%20Stra%C3%9Fe%2040%2F41%2C%2010178%20Berlin&amp;travelmode=transit" target="_blank" rel="noopener">Directions</a></div><details class="srcs"><summary>Sources</summary><a href="https://www.hoefekino.de/" target="_blank" rel="noopener">Source</a> <a href="https://www.hoefekino.de/filme/la-bola-negra-53021/" target="_blank" rel="noopener">2nd source</a></details>
 </article><p class="nomatch" hidden>Nothing here matches your filters.</p></div></section>
-<section id="sights" class="listsec"><h2>Museums &amp; big sights (opening hours)</h2><p class="note">Hours shown for Fri / Sat / Sun. Last entry is usually 30–60 min before closing.</p>
+<section id="sights" class="listsec"><h2>Museums &amp; big sights (opening hours)</h2><p class="note">Opening hours for each day of the trip. Last entry is usually 30–60 min before closing.</p>
 <div class="grid"><article class="card kind-museum" id="sammlung-scharf-gerstenberg" data-id="sammlung-scharf-gerstenberg" data-name="sammlung scharf-gerstenberg (surrealism collection)" data-types="art museum" data-price="cheap" data-days="fri sat sun" data-place="indoor" data-vegan="na">
   
   <h4><span class="em" role="img" aria-label="Art">🎨</span> Sammlung Scharf-Gerstenberg (Surrealism collection)</h4>
@@ -2021,12 +2129,12 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   <p class="note">2-player rooms: Prison Break, Der Puppenspieler, Das Geisterschiff, Last Human (2-5). Blutiges Erwachen needs 3+. Slots for 27-29 Nov not visible (widget empty); book online or call +49 30 200033059.</p>
   <div class="links"><a class="btn" href="https://www.final-escape.com/berlin/escape-room-buchen/" target="_blank" rel="noopener">Tickets</a> <a href="https://www.final-escape.com/berlin/" target="_blank" rel="noopener">Website</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Final%20Escape%20Berlin%2C%20Prenzlauer%20Allee%2023%2C%2010405%20Berlin" target="_blank" rel="noopener">Map</a> <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Final%20Escape%20Berlin%2C%20Prenzlauer%20Allee%2023%2C%2010405%20Berlin&amp;travelmode=transit" target="_blank" rel="noopener">Directions</a></div><details class="srcs"><summary>Sources</summary><a href="https://www.final-escape.com/berlin/" target="_blank" rel="noopener">Source</a> <a href="https://www.top10berlin.de/en/cat/leisure-258/escape-rooms/final-escape-berlin" target="_blank" rel="noopener">2nd source</a></details>
 </article></div><p class="nomatch" hidden>Nothing here matches your filters.</p></section>
-<section id="eat" class="listsec"><h2>Vegan food</h2><p class="note">Berlin kitchens often close mid-afternoon and on Sunday/Monday — check hours.</p>
+<section id="eat" class="listsec"><h2>Food</h2><p class="note">Kitchens often close mid-afternoon and on Sunday or Monday: check the hours.</p>
 <div class="grid"><article class="card kind-restaurant" id="1990-vegan-living" data-id="1990-vegan-living" data-name="1990 vegan living" data-types="casual" data-price="unknown" data-days="fri sat sun" data-place="indoor" data-vegan="full">
   
   <h4><span class="em" role="img" aria-label="Casual vegan">🍜</span> 1990 Vegan Living</h4>
   <div class="chips"><span class="price tier-unknown" title="Price not found">❓ Price not found</span><span class="tag">🍜 Casual vegan</span><span class="tag">🌱 Fully vegan</span></div>
-  <div class="priceline unknown">💶 Price not found: check the official site before you go. Official site has no menu or prices (nav: Startseite, Ueber uns, Reservierung, News); /speisekarte 404.</div>
+  <div class="priceline unknown">💶 Official site has no menu or prices (nav: Startseite, Ueber uns, Reservierung, News); /speisekarte 404.</div>
   <div class="meta">Friedrichshain · ~90 min visit · Ringbahn S41/S42 then short walk or U5; ~25-30 min</div>
   <p>Fun sharing-plates Vietnamese in Friedrichshain with a kitchen open late on Fri/Sat, ideal after a show; very relaxed and not formal.</p>
   <div><span class="b amber">📅 Booking advisable</span> <span class="b blue">🏠 Indoors</span> <span class="b grey">💬 no German needed (English likely; unverified)</span></div>
@@ -2104,7 +2212,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   
   <h4><span class="em" role="img" aria-label="Casual vegan">🍜</span> Shisomen Vegan Ramen &amp; Cocktails</h4>
   <div class="chips"><span class="price tier-unknown" title="Price not found">❓ Price not found</span><span class="tag">🍜 Casual vegan</span><span class="tag">🌱 Fully vegan</span></div>
-  <div class="priceline unknown">💶 Price not found: check the official site before you go. shisomen.de/menu and /seasonal-menu list ramen and dishes but show no prices.</div>
+  <div class="priceline unknown">💶 shisomen.de/menu and /seasonal-menu list ramen and dishes but show no prices.</div>
   <div class="meta">Mitte · ~70 min visit · U2 Schönhauser Allee to Stadtmitte or Potsdamer Platz, ~25 min plus walk</div>
   <p>A warming vegan ramen stop near the Brandenburg Gate/Unter den Linden end of Mitte on a freezing day; good before an evening show in the centre.</p>
   <div><span class="b amber">📅 Booking advisable</span> <span class="b blue">🏠 Indoors</span> <span class="b grey">💬 no German needed (English likely; unverified)</span></div>
@@ -2325,7 +2433,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   
   <h4><span class="em" role="img" aria-label="Shops &amp; flea markets">🛍️</span> Holy Shit Shopping Berlin (Christmas design market)</h4>
   <div class="chips"><span class="price tier-unknown" title="Price not found">❓ Price not found</span><span class="tag">🛍️ Shops &amp; flea markets</span><span class="tag">🎄 Markets &amp; festive</span></div>
-  <div class="priceline unknown">💶 Price not found: check the official site before you go. visitBerlin lists admission as &#39;tbd&#39;; organiser page shows only a Tickets link to Universe, no price. Check before going.</div>
+  <div class="priceline unknown">💶 visitBerlin lists admission as &#39;tbd&#39;; organiser page shows only a Tickets link to Universe, no price. Check before going.</div>
   <div class="meta">Treptow / Alt-Treptow · ~75 min visit · Ringbahn S41/S42 to Treptower Park then bus, about 35-40 min</div>
   <p>Independent designers and makers, quirky handmade goods and a DIY crowd - creative, unmassed alternative to a standard Christmas market, indoors and by the Spree.</p>
   <div><span class="b blue">🏠 Indoors</span> <span class="b grey">💬 no German needed</span></div>
@@ -2347,7 +2455,7 @@ footer{max-width:1100px;margin:0 auto;padding:1rem .8rem 5rem;color:var(--mut);f
   <div class="links"><a href="https://www.berlin.de/en/christmas-markets/5701678-3230598-danish-christmas-market.en.html" target="_blank" rel="noopener">Website</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Christianskirken%2C%20Brienner%20Stra%C3%9Fe%2012%2C%2010713%20Berlin" target="_blank" rel="noopener">Map</a> <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Christianskirken%2C%20Brienner%20Stra%C3%9Fe%2012%2C%2010713%20Berlin&amp;travelmode=transit" target="_blank" rel="noopener">Directions</a></div><details class="srcs"><summary>Sources</summary><a href="https://www.berlin.de/en/christmas-markets/5701678-3230598-danish-christmas-market.en.html" target="_blank" rel="noopener">Source</a></details>
 </article></div><p class="nomatch" hidden>Nothing here matches your filters.</p></section>
 <section id="practical"><h2>Practical cheat sheet</h2><ul><li><b>Cold &amp; dark</b> — Forecast is dry but freezing (about -4°C to 0°C all weekend). Sunset is about 16:00 each day, so daylight sightseeing needs to be indoors or done before 15:30. Hat, gloves and a proper coat.</li><li><b>Getting around</b> — Buy tickets in the BVG app or at station machines before boarding. Airport trips need an ABC ticket (€5 single, valid 2 h); inside Berlin AB (€4 single, €11.20 for 24 h). Contactless is not a ticket on trains, so validate paper tickets. The U-Bahn runs all night on Fri and Sat nights.</li><li><b>Trains to the airport</b> — S9/S85 to BER are closed from Fri 27 Nov 21:30 to Mon 30 Nov 01:30. For the return use the FEX / RE20 from Potsdamer Platz or Hauptbahnhof (U2 from Eberswalder Straße to Potsdamer Platz), or a taxi. Leave the flat about 3 hours before a flight. Check the BVG/VBB app for diversions on the day.</li><li><b>Sunday</b> — Sunday is quiet in Germany: ordinary shops are shut, but museums, cafés, restaurants, markets and concerts run. Many restaurants close Sunday or Monday: check the Sun hours on each card.</li><li><b>Booking</b> — Book ahead for the tasting-menu restaurants, TV Tower, Museum für Naturkunde time slots, Computerspielemuseum, Spy Museum, Christmas Garden and the big concerts. Everything marked &#39;Book ahead&#39; has an official link on its card.</li><li><b>Spas</b> — Vabali is a textile-free (nude) sauna and spa world, so only book it if that suits you both. Check the house rules of Vabali and Liquidrom on their sites, and book a time slot.</li><li><b>Vegan food</b> — Every restaurant here was checked for a real vegan or full vegan menu; where a place is vegetarian rather than fully vegan the card says so. Many jazz clubs and music venues are bars, so expect to be among drinkers.</li><li><b>Money</b> — Euro (€). Cards are widely accepted but some smaller cafés, bakeries and markets are cash-only: carry some cash.</li><li><b>Entry rules (check before you fly)</b> — UK passport holders: passport issued less than 10 years ago and valid at least 3 months beyond departure. The EU&#39;s ETIAS travel authorisation has no confirmed start date yet. Check gov.uk/foreign-travel-advice/germany and the EU Entry/Exit System page just before you travel.</li><li><b>How reliable is this sheet?</b> — Every item was found by one research agent and then independently re-checked by a second one against venue or ticketing pages on 25 Nov 2026. Items with a &#39;Double-check&#39; badge had conflicting or single sources. Items that could not be confirmed were left out. Always look at the venue&#39;s own page on the day.</li></ul></section>
-</main><footer>Generated by Watson city-break mode. Opening hours and dates were checked against the linked sources when this was built — always check the venue page before you travel.</footer>
+</main><footer>Generated by Watson. Dates, times and prices were checked against the linked sources when this was built; always check the venue page before you go.</footer>
 <a class="totop" href="#top" aria-label="Back to top">↑</a>
 <button id="filter-btn" class="fab" type="button" aria-expanded="false" aria-controls="filter-sheet" hidden>🔎 Filter<span id="filter-count"></span></button>
 <div id="filter-sheet" class="sheet" role="dialog" aria-label="Filter the list" hidden>
