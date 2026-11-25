@@ -1,0 +1,12 @@
+{
+  "name": "watson-reports",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Public, auto-pruned reports hosted on GitHub Pages",
+  "scripts": {
+    "test": "node --test tests/",
+    "build": "node scripts/site.mjs build"
+  },
+  "engines": { "node": ">=20.0.0" }
+}

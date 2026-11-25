@@ -1,0 +1,75 @@
+name: Prune, build and deploy
+
+# Runs when a report is pushed, every day, and on demand. Each run deletes reports
+# past their expiry, rebuilds the index, commits that cleanup and deploys the site.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/reports/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - '.github/workflows/pages.yml'
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  actions: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  # Days a report stays online after the last day of its trip or event.
+  # A report's meta.json can set its own "expires" date instead.
+  RETENTION_DAYS: 7
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Test
+        run: node --test tests/
+
+      - name: Prune expired reports and rebuild the index
+        run: node scripts/site.mjs build
+
+      - name: Commit the cleanup
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "Prune expired reports and rebuild index"
+            git push
+          fi
+
+      - name: Keep the daily schedule enabled
+        # GitHub pauses scheduled workflows after 60 days without repository activity.
+        # Any run of this workflow switches the schedule back on.
+        run: gh workflow enable pages.yml
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
